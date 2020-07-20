@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
 body {
   margin: 0;
   display: -webkit-box;
@@ -15,7 +16,6 @@ body {
   section {
     margin: auto auto;
     width: 88vw;
-    height: 100vh;
   }
   section:nth-child(even) {
     background-color: #8f2600;
@@ -27,10 +27,11 @@ body {
   }
   section h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     border-bottom: 2px solid #f1f1f1;
     padding: 0;
+    font-family: 'Rowdies', cursive;
   }
   section div {
     display: -ms-grid;
@@ -52,17 +53,8 @@ body {
   }
   section div article i {
     width: 100%;
-  }
-  section div article i .titre {
-    color: yellow;
-    text-align: right;
     margin-left: 12px;
-  }
-  section div article i .titre:before {
-    content: "[";
-  }
-  section div article i .titre:after {
-    content: "]";
+    font-weight: 900 !important;
   }
   section div article div {
     display: -ms-grid;
@@ -107,10 +99,11 @@ body {
     -webkit-text-fill-color: #f1f1f1;
     -webkit-text-stroke-color: #141414;
     -webkit-text-stroke-width: 2px;
-    font-size: 6em;
+    font-size: 3em;
     margin: 0;
     border-bottom: 2px solid #f1f1f1;
     padding: 0;
+    font-family: 'Rowdies', cursive;
   }
   section div {
     display: -ms-grid;
@@ -133,6 +126,7 @@ body {
   section div article i {
     width: 100%;
     margin-left: 12px;
+    font-weight: 900 !important;
   }
   section div article div {
     display: -ms-grid;

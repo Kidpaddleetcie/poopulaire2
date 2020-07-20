@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
 body {
     margin: 0;
     display: flex;
@@ -10,7 +11,6 @@ body {
     section {
         margin: auto auto;
         width: 88vw;
-        height: 100vh;
         &:nth-child(even) {
             background-color: rgb(143, 38, 0);
             border-top: 5px solid rgb(20, 20, 20);
@@ -21,10 +21,11 @@ body {
         }
         h2 {
             text-align: center;
-            font-size: 2em;
+            font-size: 1.5em;
             margin: 0;
             border-bottom: 2px solid rgb(241, 241, 241);
             padding: 0;
+            font-family: 'Rowdies', cursive;
         }
         div {
             display: grid;
@@ -40,17 +41,8 @@ body {
                 padding: 5px;
                 i {
                     width: 100%;
-                    .titre {
-                        color: yellow;
-                        text-align: right;
-                        margin-left: 12px;
-                        &:before {
-                            content: ("[");
-                        }
-                        &:after {
-                            content: ("]");
-                        }
-                    }
+                    margin-left: 12px;
+                    font-weight: 900 !important;
                 }
                 div {
                     display: grid;
@@ -94,10 +86,11 @@ body {
             -webkit-text-fill-color: rgb(241, 241, 241);
             -webkit-text-stroke-color: rgb(20, 20, 20);
             -webkit-text-stroke-width: 2px;
-            font-size: 6em;
+            font-size: 3em;
             margin: 0;
             border-bottom: 2px solid rgb(241, 241, 241);
             padding: 0;
+            font-family: 'Rowdies', cursive;
         }
         div {
             display: grid;
@@ -114,6 +107,7 @@ body {
                 i {
                     width: 100%;
                     margin-left: 12px;
+                    font-weight: 900 !important;
                 }
                 div {
                     display: grid;
