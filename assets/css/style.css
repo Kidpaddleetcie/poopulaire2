@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #141414;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 930px) {
+  section {
+    margin: auto auto;
+    width: 88vw;
+    height: 100vh;
+  }
+  section:nth-child(even) {
+    background-color: #8f2600;
+    border-top: 5px solid #141414;
+    border-bottom: 5px solid #141414;
+  }
+  section:nth-child(odd) {
+    background-color: #d14c1c;
+  }
+  section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    border-bottom: 2px solid #f1f1f1;
+    padding: 0;
+  }
+  section div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+        grid-template-areas: ".";
+    margin-top: 5px;
+    width: 100%;
+  }
+  section div article {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 241, 241, 0.2)), to(rgba(20, 20, 20, 0.4)));
+    background: linear-gradient(180deg, rgba(241, 241, 241, 0.2) 0%, rgba(20, 20, 20, 0.4) 100%);
+    border-radius: 10px;
+    padding: 5px;
+  }
+  section div article i {
+    width: 100%;
+  }
+  section div article i .titre {
+    color: yellow;
+    text-align: right;
+    margin-left: 12px;
+  }
+  section div article i .titre:before {
+    content: "[";
+  }
+  section div article i .titre:after {
+    content: "]";
+  }
+  section div article div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.8fr 1.2fr;
+        grid-template-columns: 0.8fr 1.2fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 1px 1px;
+        grid-template-areas: ". ." ". .";
+    border-top: 1px solid rgba(241, 241, 241, 0.2);
+  }
+  section div article div img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section div article div p {
+    font-size: 1.2em;
+    padding-left: 5px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  section {
+    margin: auto auto;
+    width: 88vw;
+    height: 100vh;
+  }
+  section:nth-child(even) {
+    background-color: #8f2600;
+    border-top: 5px solid #141414;
+    border-bottom: 5px solid #141414;
+  }
+  section:nth-child(odd) {
+    background-color: #d14c1c;
+  }
+  section h2 {
+    text-align: center;
+    -webkit-text-fill-color: #f1f1f1;
+    -webkit-text-stroke-color: #141414;
+    -webkit-text-stroke-width: 2px;
+    font-size: 6em;
+    margin: 0;
+    border-bottom: 2px solid #f1f1f1;
+    padding: 0;
+  }
+  section div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+        grid-template-areas: ". . " ". . ";
+    margin-top: 5px;
+    width: 100%;
+  }
+  section div article {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 241, 241, 0.2)), to(rgba(20, 20, 20, 0.4)));
+    background: linear-gradient(180deg, rgba(241, 241, 241, 0.2) 0%, rgba(20, 20, 20, 0.4) 100%);
+    border-radius: 10px;
+    padding: 5px;
+  }
+  section div article i {
+    width: 100%;
+    margin-left: 12px;
+  }
+  section div article div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.8fr 1.2fr;
+        grid-template-columns: 0.8fr 1.2fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 1px 1px;
+        grid-template-areas: ". ." ". .";
+    border-top: 1px solid rgba(241, 241, 241, 0.2);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section div article div img {
+    max-height: 160px;
+    max-width: 150px;
+    height: 10vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  section div article div p {
+    font-size: 1.2em;
+    padding-left: 5px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

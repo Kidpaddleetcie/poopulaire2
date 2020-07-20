@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+    color: rgb(241, 241, 241);
+}
+
+@media screen and (max-width: 930px) {
+    section {
+        margin: auto auto;
+        width: 88vw;
+        height: 100vh;
+        &:nth-child(even) {
+            background-color: rgb(143, 38, 0);
+            border-top: 5px solid rgb(20, 20, 20);
+            border-bottom: 5px solid rgb(20, 20, 20);
+        }
+        &:nth-child(odd) {
+            background-color: rgb(209, 76, 28);
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin: 0;
+            border-bottom: 2px solid rgb(241, 241, 241);
+            padding: 0;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px 10px;
+            grid-template-areas: ".";
+            margin-top: 5px;
+            width: 100%;
+            article {
+                background: linear-gradient(180deg, rgba(241, 241, 241, 0.2) 0%, rgba(20, 20, 20, 0.4) 100%);
+                border-radius: 10px;
+                padding: 5px;
+                i {
+                    width: 100%;
+                    .titre {
+                        color: yellow;
+                        text-align: right;
+                        margin-left: 12px;
+                        &:before {
+                            content: ("[");
+                        }
+                        &:after {
+                            content: ("]");
+                        }
+                    }
+                }
+                div {
+                    display: grid;
+                    grid-template-columns: 0.8fr 1.2fr;
+                    grid-template-rows: 1fr;
+                    gap: 1px 1px;
+                    grid-template-areas: ". ." ". .";
+                    border-top: 1px solid rgba(241, 241, 241, 0.2);
+                    img {
+                        width: 75%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto
+                    }
+                    p {
+                        font-size: 1.2em;
+                        padding-left: 5px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 930px) {
+    section {
+        margin: auto auto;
+        width: 88vw;
+        height: 100vh;
+        &:nth-child(even) {
+            background-color: rgb(143, 38, 0);
+            border-top: 5px solid rgb(20, 20, 20);
+            border-bottom: 5px solid rgb(20, 20, 20);
+        }
+        &:nth-child(odd) {
+            background-color: rgb(209, 76, 28);
+        }
+        h2 {
+            text-align: center;
+            -webkit-text-fill-color: rgb(241, 241, 241);
+            -webkit-text-stroke-color: rgb(20, 20, 20);
+            -webkit-text-stroke-width: 2px;
+            font-size: 6em;
+            margin: 0;
+            border-bottom: 2px solid rgb(241, 241, 241);
+            padding: 0;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px 10px;
+            grid-template-areas: ". . " ". . ";
+            margin-top: 5px;
+            width: 100%;
+            article {
+                background: linear-gradient(180deg, rgba(241, 241, 241, 0.2) 0%, rgba(20, 20, 20, 0.4) 100%);
+                border-radius: 10px;
+                padding: 5px;
+                i {
+                    width: 100%;
+                    margin-left: 12px;
+                }
+                div {
+                    display: grid;
+                    grid-template-columns: 0.8fr 1.2fr;
+                    grid-template-rows: 1fr;
+                    gap: 1px 1px;
+                    grid-template-areas: ". ." ". .";
+                    border-top: 1px solid rgba(241, 241, 241, 0.2);
+                    align-items: center;
+                    img {
+                        max-height: 160px;
+                        max-width: 150px;
+                        height: 10vh;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding: 5px;
+                        align-self: center;
+                    }
+                    p {
+                        font-size: 1.2em;
+                        padding-left: 5px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
